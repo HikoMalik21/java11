@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image:  url(./Precision-Time-Protocol-Hero.webp);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .stopWatch{
+        background-image: url(./natural-marble-pattern-background_1258-22160.avif);
+        width: 90%;
+        max-width: 600px;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 40px 0;
+        color: white;
+        margin: 200px auto 0;
+        box-shadow: 0 10px 10px darkblue;
+    }
+     
+    .stopWatch h1{
+        margin-top: 60px;
+        font-size: 64px;
+        font-weight: 300;
+    }
+
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .buttons img{
+        width: 50px;
+        margin: 0 20px;
+        cursor: pointer;
+
+    }
+    
+    .buttons img:nth-child(2){
+        width: 80px;
+    }
+
+
+</style>
+
+<body>
+
+    <div class="stopWatch">
+        <h1 id="disPlaytime">00:00:00</h1>
+        <div class="buttons">
+            <img src="stop.png" alt="stop" onclick="watchStop()">
+            <img src="./228115.png" alt="start" onclick="watchStart()">
+            <img src="./9361974.png" alt="reset" onclick="watchReset()">
+        </div>
+    </div>
+    
+
+
+
+
+    <script src="java11.js"></script>
+</body>
+</html>
